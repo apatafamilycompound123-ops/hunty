@@ -11,25 +11,29 @@ node_modules/
 !.yarn/versions
 
 # testing
-/coverage
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+coverage/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
 
 # Visual regression baselines (tracked)
 !/e2e/screenshots/
 
 # next.js
-/.next/
-/out/
+.next/
+out/
+*.compiled.js
+
+# turborepo
+.turbo/
 
 # mutation testing artifacts
-/mutation-report
-/.stryker-tmp
+mutation-report/
+.stryker-tmp/
 
 # production
-/build
+build/
 
 # misc
 .DS_Store
@@ -42,8 +46,6 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
-.env.local
 !.env.example
 !.env.staging
 !.env.production
@@ -51,6 +53,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# data dumps
+/issues.json
 
 # typescript
 *.tsbuildinfo
@@ -62,3 +67,4 @@ bundle-report.md
 # build logs
 *_log.txt
 build_log*
+config.bat
