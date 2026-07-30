@@ -1,0 +1,27 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "fix/868-conflicting-duplicate-declarations",
+    "fix/bundle-checks-and-cleanup-scripts",
+    "fix/stellar-wave/bundle-ci-and-cleanup",
+    "main",
+    "origin",
+    "security/issue-856-api-admin-anti-cheat-is-completely"
+  ],
+  "parent": {
+    "fix/868-conflicting-duplicate-declarations": "main",
+    "fix/bundle-checks-and-cleanup-scripts": "main",
+    "fix/stellar-wave/bundle-ci-and-cleanup": "main",
+    "main": null,
+    "origin": "main",
+    "security/issue-856-api-admin-anti-cheat-is-completely": "main"
+  },
+  "order": [
+    "main",
+    "fix/868-conflicting-duplicate-declarations",
+    "fix/bundle-checks-and-cleanup-scripts",
+    "fix/stellar-wave/bundle-ci-and-cleanup",
+    "origin",
+    "security/issue-856-api-admin-anti-cheat-is-completely"
+  ]
+}
